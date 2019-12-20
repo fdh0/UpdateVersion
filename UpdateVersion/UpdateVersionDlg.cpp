@@ -129,7 +129,7 @@ BOOL CUpdateVersionDlg::OnInitDialog()
 		//如果读取到了数据
 		//a href="update-1.2.26.6680.exe"
 		//std::regex pattern("a\ href=\"update-[0-9]{1}\.[0-9][1]\.[1-9]{2}\.[0-9]{4}\.exe\"");
-		std::regex pattern("a\ href=\"update-[0-9]{1}.[0-9]{1}.[0-9]{2}.[0-9]{4}.exe\"");
+		std::regex pattern("a\ href=\"upgrade-[0-9]{1}.[0-9]{1}.[0-9]{2}.[0-9]{4}.exe\"");
 		std::vector<CString> results;
 		CString tempResult;
 		bool success = GetDataFromHtml(info,pattern,results);
